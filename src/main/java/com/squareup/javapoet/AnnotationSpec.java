@@ -36,6 +36,7 @@ public final class AnnotationSpec {
   }
 
   void emit(CodeWriter codeWriter, boolean inline) throws IOException {
+    int test=42;
     String whitespace = inline ? "" : "\n";
     String memberSeparator = inline ? ", " : ",\n";
     if (members.isEmpty()) {
